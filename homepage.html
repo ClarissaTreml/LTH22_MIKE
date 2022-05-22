@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="/homepagecss">
+  <script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script>
+
+  <title>MIKE Homepage</title>
 </head>
+
 <body>
-$END$
+<header>
+  <h1 class="logo">MIKE</h1>
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">Homepage</a></li>
+        <li><a href="#" class="nav-link">Dokumente</a></li>
+        <li><a href="#" class="nav-link">Kontakte</a></li>
+        <li><a href="#" class="nav-link">Kalender</a></li>
+        <li><a href="#" class="active">Logout</a></li>
+      </ul>
+    </nav>
+</header>
+
+<main>
+  <div class="editor">
+    <textarea  name="editor1"></textarea>
+    <script >
+      CKEDITOR.replace('editor1');
+    </script>
+
+  </div>
+
+</main>
+
+<footer>
+  <nav class="bottom-nav">
+    <ul class="links">
+      <li><a href="#" class="legal-links">Datenschutz</a></li>
+      <li><a href="#" class="legal-links">Impressum</a></li>
+      <li><a href="#" class="legal-links">AGB</a></li>
+      <li class="copyright">(c) 2022 Clarissa Treml</li>
+    </ul>
+  </nav>
+</footer>
 </body>
 </html>
