@@ -6,43 +6,94 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="/homepagecss">
-  <script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script>
+  <script src="//cdn.ckeditor.com/4.19.0/full/ckeditor.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>MIKE Homepage</title>
+  <title>{{MIKE Homepage}}</title>
 </head>
 
 <body>
 <header>
-  <h1 class="logo">MIKE</h1>
+  <h1 class="logo">{{MIKE}}</h1>
     <nav class="top-nav">
       <ul class="nav-list">
-        <li><a href="#" class="nav-link">Homepage</a></li>
-        <li><a href="#" class="nav-link">Dokumente</a></li>
-        <li><a href="#" class="nav-link">Kontakte</a></li>
-        <li><a href="#" class="nav-link">Kalender</a></li>
-        <li><a href="#" class="active">Logout</a></li>
+        <li><a class="nav-link">Case</a></li>
+        <li><a class="nav-link">Dokumente+</a></li>
+        <li><a class="nav-link">Kontakt+</a></li>
       </ul>
     </nav>
+    <ul class="nav-list2">
+      <li><a href="/index" class="active">Logout</a></li>
+    </ul>
 </header>
 
 <main>
+
+  <div class="main_btn">
+    <div class="dropdown">
+      <button class="calendar_btn">Kalender</button>
+      <button class="calendar_btn">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div>
+
+      </div>
+
+      <button class="contacts_btn">Kontakte</button>
+      <button class="contacts_btn">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+
   <div class="editor">
     <textarea  name="editor1"></textarea>
     <script >
       CKEDITOR.replace('editor1');
     </script>
-
   </div>
+  <div class="main_btn">
+
+
+    <div class="dropdown">
+      <button class="contracts_btn">Verträge</button>
+      <button class="contracts_btn">
+        <i class="fa fa-caret-down"></i>
+      </button>
+
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+      <button class="briefs_btn">Schriftsätze</button>
+      <button class="briefs_btn">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+
 
 </main>
 
 <footer>
   <nav class="bottom-nav">
     <ul class="links">
+      <li class="legal-links">(c) 2022 Clarissa Treml</li>
       <li><a href="#" class="legal-links">Datenschutz</a></li>
       <li><a href="#" class="legal-links">Impressum</a></li>
       <li><a href="#" class="legal-links">AGB</a></li>
-      <li class="copyright">(c) 2022 Clarissa Treml</li>
+      <li><a href="#" class="legal-links">Über uns</a></li>
     </ul>
   </nav>
 </footer>

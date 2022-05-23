@@ -5,45 +5,74 @@
 }
 
 body{
-    background-color: #fefae0;
+    background-color: white;
+    align-content: center;
 }
+
+/**************************   MAIN   *******************************/
 
 main{
-    margin: 80px 10px 10px 700px;
+    position: relative;
     width: 500px;
-    height: 650px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-
+    min-height: 600px;
+    background-color: #61b0d2;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.login h1{
+body h1{
     font-size: 58px;
     font-weight: bold;
     font-family:Calibri;
-    color: cadetblue;
+    color: #61b0d2;
+    text-align: center;
 }
 
-.btn:hover{
-    background-color: cadetblue;
+.form-group{
+    margin-top: 50px;
+    margin-left: 25%;
+
 }
+.form-group input{
+    height: 60px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+.btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+    border: none;
+    margin: 4px 2px;
+    margin-left: 25%;
+}
+
+/**************************   FOOTER   *******************************/
 
 footer{
-    background-color: cadetblue;
+    background-color: #61b0d2;
     height: 100px;
     width: 100%;
     bottom: 0;
     background-size: cover;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.foot{
-
-
-}
-.jus{
+footer li{
+    margin: 8px;
     display: inline-table;
 }
+
+footer li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 20px;
+}
+

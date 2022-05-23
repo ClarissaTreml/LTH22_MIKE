@@ -2,19 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
+/**************************   HEADER   *******************************/
+
 header{
-    background-color: cadetblue;
+    background-color: #61b0d2;
     overflow: hidden;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
+    color: white;
 }
 
 header li{
@@ -23,35 +22,95 @@ header li{
 }
 
 header li a{
-    color: white;
+    color: Black;
     text-decoration: none;
     font-size: 28px;
 }
 
 header li a:hover {
-    background-color: #111;
+    background-color: #61b0d2;
 }
 
-header active {
-    background-color: #04AA6D;
-}
 .top-nav{
     display: flex;
     justify-content: center;
 }
-header li:last-child{
-
+.nav-list2{
+    margin-left: 94%;
 }
+.logo{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+/**************************  MAIN  *******************************/
 
 main{
-    background-color: cornsilk;
+    background-color: orange;
     height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: flex;
 
 }
 
+.editor{
+    width: 500px;
+    height: 1500px;
+    margin: auto;
+}
+button {
+    background-color: #61b0d2;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.main_btn{
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    width: 100%;
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/**************************  FOOTER  *******************************/
 
 footer{
-    background-color: cadetblue;
+    background-color: #61b0d2;
     height: 100px;
     width: 100%;
     bottom: 0;
@@ -62,7 +121,6 @@ footer{
     align-items: center;
 }
 footer li{
-    display: inline;
     margin: 8px;
     display: inline-table;
 }
@@ -71,7 +129,6 @@ footer li a{
     color: white;
     text-decoration: none;
     font-size: 24px;
+    margin-right: 20px;
 }
-footer .copyright{
 
-}

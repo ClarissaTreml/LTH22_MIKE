@@ -4,7 +4,9 @@ READ ME
 **Create a new project with a server.js file**
 
 npm init --> default settings
-npm i express mongoose body-parser
+
+npm install express mongoose body-parser
+
 run server with nodemon server.js
 
 **MongoDB Atlas**

@@ -7,23 +7,21 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="/indexcss">
 
-  <title>MIKE Login</title>
+  <title>{{MIKE}} Login</title>
 </head>
 
 <body>
-
+<h1>Welcome to {{MIKE}}</h1>
 <main>
   <div class="login">
-    <h1>Welcome to MIKE</h1>
+
     <br></br>
-    <form action="/" class="container" method="post">
+    <form action="/homepage" class="container" method="post">
 
       <div class="form-group">
-        <label for="usn">Username:</label><br>
-        <input class="form-control" type="text" placeholder="Username" name="username" value="" id="usn" />
+        <input class="form-control" type="text" placeholder="username" name="username" value="" id="usn" required />
         <br></br>
-        <label for="pw">Password:</label><br>
-        <input type="password" placeholder="Password" name="password" value="" id="pw" />
+        <input type="password" placeholder="password" name="password" value="" id="pw" required/>
       </div>
       <br></br>
       <button type="submit" class="btn" name="logIn">LOGIN</button>
@@ -31,15 +29,17 @@
     </form>
   </div>
 </main>
-<footer>
-  <div class="foot">
-    <p class="jus">Datenschutz</p>
-    <p class="jus">Impressum</p>
-    <p class="jus">AGB</p>
-    <br></br>
-    <p>(c) 2022 Clarissa Treml</p>
-  </div>
 
+<footer>
+  <nav class="bottom-nav">
+    <ul class="links">
+      <li class="legal-links">(c) 2022 Clarissa Treml</li>
+      <li><a href="#" class="legal-links">Datenschutz</a></li>
+      <li><a href="#" class="legal-links">Impressum</a></li>
+      <li><a href="#" class="legal-links">AGB</a></li>
+      <li><a href="#" class="legal-links">Über uns</a></li>
+    </ul>
+  </nav>
 </footer>
 
 </body>
