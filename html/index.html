@@ -16,16 +16,14 @@
   <div class="login">
 
     <br></br>
-    <form action="/homepage" class="container" method="post">
-
+    <form action="/homepage" class="container" onsubmit="return login()"  method="GET" id="loginForm" autocomplete="off" >
       <div class="form-group">
-        <input class="form-control" type="text" placeholder="username" name="username" value="" id="usn" required />
+        <input type="text" placeholder="username" name="username" value="" id="usn" required />
         <br></br>
         <input type="password" placeholder="password" name="password" value="" id="pw" required/>
       </div>
       <br></br>
       <button type="submit" class="btn" name="logIn">LOGIN</button>
-
     </form>
   </div>
 </main>

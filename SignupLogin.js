@@ -63,10 +63,21 @@ router.get("/index", function (req, res) {
 //    res.send("express is working")
 //})
 router.get("/login.js", function (req, res) {
-    res.sendFile(__dirname + "/login.js");
+    res.sendFile(__dirname + "/js/login.js");
 });
 router.get("/index.css", function (req, res) {
     res.sendFile(__dirname + "/css/index.css");
+
+
+});
+router.get("/homepage", function (req, res) {
+    res.sendFile(__dirname + "/html/index.html");
+})
+router.get("/homepagejs", function (req, res) {
+    res.sendFile(__dirname + "/js/homepage.js");
+});
+router.get("/homepagecss", function (req, res) {
+    res.sendFile(__dirname + "/css/homepage.css");
 });
 
 router.post("/", function (req, res) {
@@ -75,8 +86,9 @@ router.post("/", function (req, res) {
         password: req.body.password
     });
     newUser.save();
-    res.redirect('/');
+    res.redirect('/homepage');
 });
+
 
 
 module.exports = router;

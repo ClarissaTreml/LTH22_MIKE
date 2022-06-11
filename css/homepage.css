@@ -8,7 +8,7 @@
 /**************************   HEADER   *******************************/
 
 header{
-    background-color: #61b0d2;
+    background-color: cornflowerblue;
     overflow: hidden;
     position: relative;
     top: 0;
@@ -22,13 +22,13 @@ header li{
 }
 
 header li a{
-    color: Black;
+    color: white;
     text-decoration: none;
     font-size: 28px;
 }
 
 header li a:hover {
-    background-color: #61b0d2;
+    background-color: #66afe9;
 }
 
 .top-nav{
@@ -46,7 +46,7 @@ header li a:hover {
 /**************************  MAIN  *******************************/
 
 main{
-    background-color: orange;
+    background-color: white;
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -57,12 +57,14 @@ main{
 }
 
 .editor{
-    width: 500px;
-    height: 1500px;
+    width: 1200px;
+    height: 100%;
     margin: auto;
+    background-color: #66afe9;
 }
+
 button {
-    background-color: #61b0d2;
+    background-color: dimgrey;
     color: white;
     padding: 10px;
     font-size: 18px;
@@ -110,7 +112,7 @@ button {
 /**************************  FOOTER  *******************************/
 
 footer{
-    background-color: #61b0d2;
+    background-color: #0055aa;
     height: 100px;
     width: 100%;
     bottom: 0;
@@ -119,6 +121,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 footer li{
     margin: 8px;
